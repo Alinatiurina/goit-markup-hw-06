@@ -109,11 +109,13 @@ ul {
 .mobile-menu-nav-item:active {
     color: #404bbf;
 }
+
 .mobile-menu-container {
     position: relative;
 }
 .mobile-menu-nav {
     margin-top: 72px;
+    margin-bottom: 168px;
 }
 .mobile-close-btn {
     border: 1px solid #e7e9fc;
@@ -149,6 +151,9 @@ ul {
 .mobile-adress-link:focus,
 .mobile-adress-link:active {
     color: #4d5ae5;
+}
+.tel {
+    color: #404bbf;
 }
 .mobile-list-link-container {
     display: flex;
@@ -316,7 +321,6 @@ ul {
 
 /* ====================Hero section =====================*/
 .hero-section {
-    height: 600px;
     flex-shrink: 0;
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -324,8 +328,8 @@ ul {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 188px 0;
-    max-width: 1440px;
+    padding: 72px 0;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -342,10 +346,11 @@ ul {
     margin-right: auto;
     margin-bottom: 48px;
     text-align: center;
-    font-size: 56px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.07;
+    line-height: 1.1;
     letter-spacing: 0.02em;
+
     max-width: 496px;
 }
 .hero-btn {
@@ -383,6 +388,8 @@ ul {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url('../images/hero-tablet/hero-image.jpg');
+        max-width: 768px;
+        padding: 112px 0;
     }
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -397,6 +404,8 @@ ul {
     .hero-section {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url('../images/hero-desktop/hero-image.jpg');
+        max-width: 1440px;
+        padding: 188px 0;
     }
 }
 @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
@@ -410,7 +419,7 @@ ul {
 /* ================Advantages==================== */
 .advantages {
     background-color: #fff;
-    padding: 120px 0;
+    padding: 96px 0;
 }
 .advantages-list {
     display: flex;
@@ -433,9 +442,9 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-
     margin-bottom: 8px;
-    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .adv-text {
@@ -482,6 +491,7 @@ ul {
 
     .adv-text {
         font-weight: 400;
+        margin-top: 8px;
     }
 }
 
@@ -859,7 +869,7 @@ ul {
     background-color: #4d5ae5;
     border: none;
     border-radius: 4px;
-
+    margin: 0 auto;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
